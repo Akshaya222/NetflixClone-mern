@@ -15,7 +15,7 @@ const Index = () => {
        return ()=>{
            clearInterval(interval);
        }
-    },[])
+    },[image])
 
    const nextImage=()=>{
        let index=image;
