@@ -15,7 +15,6 @@ const Index = () => {
   },[])
 
   const  clickHandler=(e)=>{
-        console.log("div",e.target.classList[2]);
         setValue(e.target.classList[2]);
         sessionStorage.setItem("value",JSON.stringify(e.target.classList[2]))
         setTimeout(()=>{history.push("/browse")},1000)

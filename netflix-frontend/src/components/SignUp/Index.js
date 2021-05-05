@@ -15,7 +15,7 @@ const Index = () => {
 
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3007/auth/signup-username",{
+        axios.post("https://still-ocean-22647.herokuapp.com/auth/signup-username",{
             username:state.email,password
         },{headers:{
             "Content-Type":"application/json"

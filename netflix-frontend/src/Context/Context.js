@@ -19,13 +19,12 @@ const Context = (props) => {
 
     useEffect(()=>{
         let films,series;
-        axios.get("http://localhost:3007/films").then((res)=>{
-            console.log("films",res.data)
+        axios.get("https://still-ocean-22647.herokuapp.com/films").then((res)=>{
             films=[res.data]
         }).catch((err)=>{
             console.log(err)
         })
-        axios.get("http://localhost:3007/series").then((res)=>{
+        axios.get("https://still-ocean-22647.herokuapp.com/series").then((res)=>{
              series=[res.data]
             setState({...state,series:series,films:films})
         }).catch((err)=>{

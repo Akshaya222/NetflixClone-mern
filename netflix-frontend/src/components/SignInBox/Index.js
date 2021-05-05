@@ -12,7 +12,7 @@ const Index = () => {
 
     const submitHandler=(e)=>{
         e.preventDefault();        
-        axios.put("http://localhost:3007/auth/login-username",{
+        axios.put("https://still-ocean-22647.herokuapp.com/auth/login-username",{
            username:email,password
         }).then((res)=>{
             setErr("");

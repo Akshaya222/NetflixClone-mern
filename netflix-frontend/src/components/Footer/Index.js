@@ -32,7 +32,7 @@ const Index = () => {
            <Link href="#">Legal Notices</Link>
            </Pane>
        </Container>
-       <Text>Netflix United Kingdom @ copyrights</Text>
+       <Text>Akshaya Reddy 2021 @ copyrights</Text>
       </div>
     )
 }
